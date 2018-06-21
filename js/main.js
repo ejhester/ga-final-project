@@ -4,7 +4,7 @@ $(document).ready(function(){
 	// element: nav .international
 	// event: click
 	// exec: function
-	$('li').on('click', function(event){
+	$('#projects li').on('click', function(event){
 
 		event.preventDefault();
 
@@ -30,6 +30,38 @@ $(document).ready(function(){
 			$('#slide-down').slideDown();
 		}
 	});
+
+	$('.topLink').click(function(event){
+		event.preventDefault();
+		$('html, body').animate({
+		   scrollTop: ($('#top').offset().top)
+		},500);
+	})
+	$('.projectsLink').click(function(){
+		$('html, body').animate({
+		   scrollTop: ($('#projects').offset().top)
+		},500);
+	})
+	$('.contactMe').click(function(){
+		$('html, body').animate({
+		   scrollTop: ($('#contact').offset().top)
+		},500);
+	})
+	$('.contactLink').click(function(){
+		$('html, body').animate({
+		   scrollTop: ($('#contactMe').offset().top)
+		},500);
+	})
+	// $('.topLink').on('click', function(){
+	// 	$( "#top" ).scroll();
+	// })
+	// $('nav a').on('click', function(event){
+	// 	var target = $(this).attr('href');
+	// 	var scrollTop = $(target).offset().top;
+	// 	$('html, body').animate({
+	// 	   scrollTop: scrollTop
+	// 	},500);
+	// });
 
 });
 
