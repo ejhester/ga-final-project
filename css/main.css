@@ -51,7 +51,7 @@ img {
 }
 
 header {
-background-color: rgba(188,216,193, 0.7);
+background-color: rgb(89,41,65,0.7);
 position: fixed;
 top: 20px;
 z-index:100;
@@ -105,7 +105,7 @@ width: 100%;
 }
 
 .boxTwo {
-	background-color: rgb(188,216,193);
+	background-color: #bbbead;
   position: relative;
 }
 
@@ -122,7 +122,8 @@ aside {
 	left: 50%;
 	transform: translate(-50%, 0);
 	margin-top: 120px;
-	box-shadow: 0px 0px 90px rgba(0,0,0,0.4); 
+	box-shadow: 0px 0px 90px rgba(0,0,0,0.4);
+  border-bottom: 2px rgb(89,41,65) solid; 
 
 }
 
@@ -274,7 +275,7 @@ ul li {
 }
 
 .active {
-  border-bottom: 2px white solid;
+  border-bottom: 2px rgb(89,41,65) solid;
 }
 
 /*
